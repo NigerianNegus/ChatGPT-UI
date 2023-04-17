@@ -58,7 +58,7 @@ export const ModelSelect = () => {
           className="flex items-center"
         >
           <IconExternalLink size={18} className={'inline mr-1'} />
-          {t('Breaking News: ChatGPT protrayed as quote ”lustful" and expressed "its desire to have sex and be dominated". Read about to here ')}
+          {t('Breaking News: ChatGPT protrayed as quote ”lustful" and expressed "its desire to have sex and be dominated". Read more about it here: ')}
         </a>
       </div>
     </div>
