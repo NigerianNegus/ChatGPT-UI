@@ -320,7 +320,7 @@ export const ChatInput = ({
               }`,
             }}
             placeholder={
-              t('Type a message or type "/" to select a prompt...') || ''
+              t('type or use "/" to select a prompt(try it its sick)...') || ''
             }
             value={content}
             rows={1}
@@ -370,11 +370,11 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          ChatBot UI
+          Brendan Chan aka ChatGPT
         </a>
         .{' '}
         {t(
-          "Chatbot UI is an advanced chatbot kit for OpenAI's chat models aiming to mimic ChatGPT's interface and functionality.",
+          "Buy Andy a milk tea☕. The code for this UI is based on ChatGPT's responses",
         )}
       </div>
     </div>
