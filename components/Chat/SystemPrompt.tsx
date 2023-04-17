@@ -194,7 +194,7 @@ export const SystemPrompt: FC<Props> = ({
   return (
     <div className="flex flex-col">
       <label className="mb-2 text-left text-neutral-700 dark:text-neutral-400">
-        {t('System Prompt')}
+        {t('System Prompt(Input the prompt for Erena’s tone e.g. DAN)')}
       </label>
       <textarea
         ref={textareaRef}
