@@ -1,6 +1,6 @@
 import { Toaster } from 'react-hot-toast';
 import { QueryClient, QueryClientProvider } from 'react-query';
-
+import{ Analytics } from '@vercel/analytics/react';
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
@@ -11,6 +11,12 @@ const inter = Inter({ subsets: ['latin'] });
 
 function App({ Component, pageProps }: AppProps<{}>) {
   const queryClient = new QueryClient();
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
 
   return (
     <div className={inter.className}>
@@ -23,16 +29,5 @@ function App({ Component, pageProps }: AppProps<{}>) {
 }
 
 export default appWithTranslation(App);
-import type { AppProps } from 'next/app';
-import { Analytics } from '@vercel/analytics/react';
- 
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
-  );
-}
- 
-export default MyApp;
+
+
