@@ -320,7 +320,7 @@ export const ChatInput = ({
               }`,
             }}
             placeholder={
-              t('Ask Erena about anything:') || ''
+              t('Ask  about anything:') || ''
             }
             value={content}
             rows={1}
