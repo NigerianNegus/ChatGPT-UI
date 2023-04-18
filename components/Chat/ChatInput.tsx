@@ -320,7 +320,7 @@ export const ChatInput = ({
               }`,
             }}
             placeholder={
-              t('type you ugly fuck') || ''
+              t('Ask Erena about anything:') || ''
             }
             value={content}
             rows={1}
@@ -370,7 +370,7 @@ export const ChatInput = ({
           rel="noreferrer"
           className="underline"
         >
-          Brendan Chan aka ChatGPT
+          Erena the Goat
         </a>
         .{' '}
         {t(
