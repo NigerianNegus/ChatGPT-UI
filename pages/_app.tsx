@@ -9,49 +9,17 @@ import '@/styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-function App({ Component, pageProps }: AppProps<{}>) {
-  const queryClient = new QueryClient();
-
+import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
+ 
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className={inter.className}>
-      <Toaster />
-      <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
-      </QueryClientProvider>
-    </div>
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
   );
 }
-function
  
-MyApp
-({ Component
-,
- pageProps }
-:
- 
-AppProps
-) {
-  
-return
- (
-    
-<>
-      
-<
-Component {
-...
-pageProps} 
-/>
-      
-<
-Analytics 
-/>
-    
-</>
-  );
-}
-export
- 
-default
- MyApp;
+export default MyApp;
 export default appWithTranslation(App);
