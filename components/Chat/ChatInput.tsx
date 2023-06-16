@@ -374,7 +374,7 @@ export const ChatInput = ({
         </a>
         .{' '}
         {t(
-          "Buy Andy a milk tea☕. The code for this UI is based on ChatGPT's responses",
+          "Buy Andy a milk tea☕. All codes for this UI is based on ChatGPT's responses",
         )}
       </div>
     </div>
