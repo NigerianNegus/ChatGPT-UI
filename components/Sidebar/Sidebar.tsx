@@ -115,5 +115,6 @@ const Sidebar = <T,>({
         {footerComponent}
       </div>
     </div>
+);
 // };
 export default Sidebar;
